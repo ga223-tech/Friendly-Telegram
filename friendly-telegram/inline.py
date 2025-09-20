@@ -484,7 +484,8 @@ class InlineManager:
 
             for row in r.reply_markup.rows:
                 for button in row.buttons:
-                    if re.search(r"@geektg_[0-9a-zA-Z]{6}_bot", button.text, re.I):
+                    bot_pattern = rf"@{username}_[0-9a-zA-Z]{{6}}_bot"
+                    if re.search(bot_pattern, button.text, re.I):
 
                         await asyncio.sleep(2)
 
@@ -1405,4 +1406,5 @@ class InlineManager:
 
 if __name__ == "__main__":
     raise Exception("This file must be called as a module")
+
 
