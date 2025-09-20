@@ -393,7 +393,7 @@ class InlineManager:
             await asyncio.sleep(2)
 
             # Set its name to user's name + GeekTG Userbot
-            m = await conv.send_message(f"🤖 GeekTG Userbot of {self._name}")
+            m = await conv.send_message(f"Fufib ,jn {self._name}")
             r = await conv.get_response()
 
             await asyncio.sleep(2)
@@ -403,7 +403,7 @@ class InlineManager:
 
             # Generate and set random username for bot
             uid = rand(6)
-            username = f"GeekTG_{uid}_Bot"
+            username = f"agashatgzhwstka_Bot"
 
             m = await conv.send_message(username)
             r = await conv.get_response()
@@ -431,8 +431,9 @@ class InlineManager:
             await r.delete()
 
             try:
-                m = await conv.send_file(photo)
-                r = await conv.get_response()
+                # m = await conv.send_file(photo)
+                # r = await conv.get_response()
+                pass
             except Exception:
                 # In case user was not able to send photo to
                 # BotFather, it is not a critical issue, so
@@ -565,29 +566,29 @@ class InlineManager:
                         await r.delete()
 
                         # Set bot profile pic
-                        m = await conv.send_message("/setuserpic")
-                        r = await conv.get_response()
+                       # m = await conv.send_message("/setuserpic")
+                      #  r = await conv.get_response()
 
-                        await asyncio.sleep(2)
+                      #  await asyncio.sleep(2)
 
-                        await m.delete()
+                      #  await m.delete()
+                       # await r.delete()
+
+                    #    m = await conv.send_message(button.text)
+                     #   r = await conv.get_response()
+
+                     #   await asyncio.sleep(2)
+
+                     #   await m.delete()
                         await r.delete()
 
-                        m = await conv.send_message(button.text)
-                        r = await conv.get_response()
+                      #  m = await conv.send_file(photo)
+                     #   r = await conv.get_response()
 
-                        await asyncio.sleep(2)
+                      #  await asyncio.sleep(2)
 
-                        await m.delete()
-                        await r.delete()
-
-                        m = await conv.send_file(photo)
-                        r = await conv.get_response()
-
-                        await asyncio.sleep(2)
-
-                        await m.delete()
-                        await r.delete()
+                      #  await m.delete()
+                       # await r.delete()
 
                         # Return `True` to say, that everything is okay
                         return True
@@ -1404,3 +1405,4 @@ class InlineManager:
 
 if __name__ == "__main__":
     raise Exception("This file must be called as a module")
+
